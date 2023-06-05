@@ -1,0 +1,37 @@
+.wrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+.block{
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.close{
+    position: absolute;
+    top:0;
+    right: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    color:brown;
+    cursor: pointer;
+}
+.error{
+    color: #ed3434;
+}
+.block label input {
+    margin: 5px 0;
+    padding: 5px;
+    cursor: pointer;
+}

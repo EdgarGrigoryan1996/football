@@ -1,0 +1,58 @@
+.navbar{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(233, 204, 116, 0.75);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 9999;
+}
+.avatar{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.avatar img{
+    width: 50px;
+    height: 50px;
+}
+.authUser{
+    display: flex;
+    align-items: center;
+}
+.email{
+    margin-left: 5px;
+}
+.signOut{
+    padding: 10px;
+    border:none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #c52e2e;
+    color: white;
+    margin-left: 15px;
+
+}
+.logo{
+    width: 100px;
+    height: 40px;
+    margin-left: 25px;
+    margin-top: 5px;
+    cursor: pointer;
+
+}
+
+/*Media*/
+
+@media screen and (max-width: 430px) {
+    .email{
+        font-size: 12px;
+    }
+    .signOut{
+        margin: 0 5px;
+        padding: 5px;
+    }
+}

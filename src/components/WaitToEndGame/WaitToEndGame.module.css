@@ -1,0 +1,10 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:#e9cc74;
+    font-size: 80px;
+    height: 70vh;
+    text-align: center;
+}

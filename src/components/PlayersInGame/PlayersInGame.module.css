@@ -1,0 +1,85 @@
+.InGamePlayers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 25px 0;
+}
+.equalModeBlock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.generateButtonBlock{
+    display: flex;
+    justify-content: center;
+}
+.container {
+    color:#E9CC74;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border-radius: 8px;
+    background-color: #fadfaa;
+    border:1px solid #1D1D11;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    transition: all 0.2s ease;
+}
+.container input:checked ~ .checkmark:hover {
+    box-shadow: 2px 3px 5px #1D1D11;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    content:"";
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid #2c2c2c;
+    border-width: 0 3px 3px 0;
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.container input:disabled ~ .checkmark{
+    cursor: not-allowed;
+    opacity: 0.4;
+}

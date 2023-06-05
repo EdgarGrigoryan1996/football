@@ -1,0 +1,96 @@
+
+.statisticsBlock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.streak{
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    color: #FECE48;
+}
+.streak img{
+    width: 60px;
+    height: 80px;
+    margin-right: 3px;
+}
+.goldPlayer .streak{
+    color: #13110A;
+}
+
+/*Info*/
+.gamesInfo{
+    width: 100%;
+}
+.info{
+    display: flex;
+    border-bottom: 1px solid  hsla(0, 0%, 100%, 0.1);
+    padding: 15px 0;
+    font-size: 25px;
+
+}
+.infoTitle{
+    width: 100%;
+    color: hsla(0, 0%, 100%, 0.6);
+}
+.infoGames,.infoWin,.infoLose,.infoDraw{
+    width: 70px;
+    border-radius: 10px;
+    text-align: center;
+}
+.infoGames{
+    background-color: #333;
+    color:#fff;
+}
+.infoWin{
+    background-color: #387b45;
+    color:#fff;
+}
+.infoLose{
+    background-color: #b53b3b;
+    color:#fff;
+}
+.infoDraw{
+    background-color: #6f6d6d;
+    color:#fff;
+}
+.avatarRatingBlock{
+
+}
+.rating{
+    background-color: #2c2c2c;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #e9cc74;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    top: -5px;
+    font-size: 28px;
+}
+
+/* Media */
+
+@media screen and (max-width: 576px) {
+    .info{
+        padding: 13px 0;
+    }
+    .infoTitle{
+        font-size: 18px;
+    }
+    .infoGames,.infoWin,.infoLose,.infoDraw{
+        width: 40px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 20px;
+    }
+}
+

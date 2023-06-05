@@ -1,0 +1,54 @@
+
+.appWrapper{
+    font-family: "Book Antiqua";
+    width: 100%;
+    min-height: 90vh;
+    background-image: url("https://images.unsplash.com/photo-1473976345543-9ffc928e648d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1559&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+body::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f9f9fd;
+    border-radius: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #e9cc74;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+.backgroundBlack{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgba(0,0,0,0.7);
+
+}
+.showLastResultsBlock{
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.noPlayedUserMessage{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: #e9cc74;
+}
+.statisticButtonBlock{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}

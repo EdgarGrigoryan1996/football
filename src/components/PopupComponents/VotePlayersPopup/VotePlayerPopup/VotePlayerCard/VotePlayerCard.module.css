@@ -1,0 +1,19 @@
+.wrapper{
+    margin:15px;
+    position: relative;
+    transition: all 0.2s ease;
+    outline: none;
+}
+.myCard{
+    width: 300px !important;
+
+}
+.myRating{
+    font-size: 20px;
+    margin-left: 20px;
+}
+.myPlayerName{
+    border-top:2px solid rgba(233,204,116,0.7);
+    border-bottom: none !important;
+    margin-top: 50px;
+}

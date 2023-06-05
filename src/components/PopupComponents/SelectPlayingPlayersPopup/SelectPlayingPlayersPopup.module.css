@@ -1,0 +1,85 @@
+.flex{
+    display: flex;
+    justify-content: center;
+}
+.popupWrapper{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 990;
+}
+
+.popupBlock{
+    position: relative;
+    max-width: 860px;
+    max-height: 650px;
+    background-color: #e9cc74;
+    border-radius: 8px;
+    box-shadow: rgba(233, 204, 116,0.56) 10px 10px 60px 4px;}
+.popupTitle h2{
+    text-align: center;
+    margin: 0 ;
+    padding: 15px 0;
+}
+
+.closePopup{
+    position: absolute;
+    top:0;
+    right: 10px;
+    font-size: 28px;
+    font-weight: 700;
+    color:#1D1D11;
+    cursor: pointer;
+}
+
+/* Players */
+
+.players{
+    padding: 0 15px;
+    max-height: 450px;
+    overflow-y: scroll;
+    box-shadow: 1px 1px 5px #1D1D11;
+    border-radius: 3px;
+}
+.players::-webkit-scrollbar {
+    width: 10px;
+    background-color: #f9f9fd;
+    border-radius: 5px;
+}
+
+.players::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #1D1D11;
+}
+
+.players::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    background-color: #f9f9fd;
+}
+
+/* Buttons */
+
+.buttons{
+    display: flex;
+    justify-content: space-around;
+    padding: 15px 0 0 0;
+}
+
+/* MEDIA */
+@media screen and (max-width: 858px) {
+    .popupBlock{
+        max-width: 600px;
+    }
+    .players{
+        max-height: 350px;
+    }
+    .popupTitle h2{
+        padding: 8px 0;
+    }
+}

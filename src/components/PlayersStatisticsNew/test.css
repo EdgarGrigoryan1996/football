@@ -1,0 +1,135 @@
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.wrap{
+    margin: 2rem;
+    transform-style: preserve-3d;
+    transform: perspective(100rem);
+    cursor: pointer;
+}
+.container{
+    font-family: "Book Antiqua" !important;
+    --rX: 0;
+    --rY: 0;
+    --bX: 50%;
+    --bY: 80%;
+    width: 20rem;
+    height: 25rem;
+    border: 1px solid hsl(180, 20%, 90%);
+    border-radius: 1.6rem;
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    transform: rotateX(calc(var(--rX) * 1deg)) rotateY(calc(var(--rY) * 1deg));
+    /*ste tarder dzeverov kpcrel em karas komentic baces duel naes */
+    /*background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("https://www.bhaktiphotos.com/wp-content/uploads/2018/04/Mahadev-Bhagwan-Photo-for-Devotee.jpg");*/
+    /*background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1)), url("./f7757d5977c6ade5ba352ec583fe8e40.jpg");*/
+    background-position: var(--bX) var(--bY);
+    background-size: 40rem auto;
+    box-shadow: 0 0 3rem .5rem hsla(0, 0%, 0%, 0.2);
+    transition: transform 0.3s;
+}
+
+
+/*stexel amen cardi hamar arandzin nkarner em kpcre , steel karas qo uzac nkarner@ dnes*/
+.item1{
+    background: linear-gradient(hsla(0, 0%, 100%, 0.1), hsla(0, 0%, 100%, 0.1));
+}
+.container::before,
+.container::after{
+    content: "";
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #fff;
+    position: absolute;
+    z-index: 2;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+.container::before{
+    top: 2rem;
+    right: 2rem;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+.container::after{
+    bottom: 2rem;
+    left: 2rem;
+    border-top-width: 0;
+    border-right-width: 0;
+}
+.container-active{
+    transition: none;
+}
+.container p{
+    position: absolute;
+    bottom: 10px;
+    left:50px;
+    color: #fff;
+    filter: drop-shadow(1px 1px 10px #000);
+    font-size: 2.2rem;
+}
+.wrap:hover .container::before,
+.wrap:hover .container::after{
+    width: calc(100% - 4rem);
+    height: calc(100% - 4rem);
+}
+
+/* My Styles */
+.avatar-block{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 75px;
+    height: 75px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.avatar-block img{
+    width: 75px;
+    height: 75px;
+}
+.authUser{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: #42d356;
+    border-radius: 50%;
+    filter: drop-shadow(1px 1px 8px #42d356);
+}
+.container:hover{
+    transform: scale(1.1);
+}
+.goldPlayer .container{
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+    radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+}
+
+@media screen and (max-width: 576px) {
+    .container{
+        width: 15rem;
+        height: 20rem;
+    }
+    .avatar-block{
+        width: 60px;
+        height: 60px;
+    }
+
+    .avatar-block img{
+        width: 60px;
+        height: 60px;
+    }
+    .container p{
+        font-size: 1.6rem;
+    }
+}

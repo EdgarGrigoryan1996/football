@@ -1,0 +1,63 @@
+.btn{
+    min-width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    border:none;
+    outline: none;
+    transition: all 0.2s ease;
+}
+.Yellow{
+    background-color: yellow;
+}
+.Green{
+    background-color: #176417;
+    color:#fff;
+}
+.Red{
+    background-color: brown;
+    color:#fff;
+}
+.Red:hover{
+    background-color: #ce3d3d;
+}
+.generateColor,.myColor2{
+    background-color: rgba(233, 204, 116, 0.75);
+    color:#19150B;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.generateColor{
+    width: 180px;
+    height: 50px;
+}
+.generateColor:hover{
+    background-color: #faeece;
+}
+.myColor{
+    background-color: #19150B;
+    color:#e9cc74;
+    font-weight: 700;
+}
+.myColor:hover{
+    background-color: #466b4b;
+    color:#e9cc74;
+}
+.myColor2:hover{
+    background-color: #c52e2e;
+    color:#e9cc74;
+}
+
+.btn:disabled{
+    cursor: not-allowed;
+    background-color: rgba(233,204,116,0.3);
+}
+
+
+@media screen and (max-width: 672px) {
+    .btn{
+        width: 60px;
+        height: 35px;
+    }
+
+}
